@@ -1,0 +1,33 @@
+{
+  "name": "com.kvsc.type1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
+  },
+  "author": "Yash Bansal",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "cookie-parser": "^1.4.6",
+    "cookie-session": "^2.1.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.1",
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "express-middleware": "^3.4.2",
+    "express-passport-logout": "^0.1.0",
+    "express-session": "^1.18.0",
+    "google-auth-library": "^9.0.0",
+    "html-pdf": "^3.0.1",
+    "middleware": "^1.0.0",
+    "mongoose": "^7.4.5",
+    "nodemon": "^3.0.1",
+    "passport": "^0.7.0",
+    "passport-google-oauth": "^2.0.0",
+    "passport-google-oauth2": "^0.2.0",
+    "passport-google-oauth20": "^2.0.0"
+  }
+}

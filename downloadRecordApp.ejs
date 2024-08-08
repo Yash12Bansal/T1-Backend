@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PDF Report</title>
+  <style>
+    /* Add your CSS styles here */
+    .main {
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  font-size: 1rem;
+}
+table {
+  border-spacing: 1;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 10px;
+  border: 1px solid black;
+  overflow: hidden;
+  max-width: 800px;
+  width: 100%;
+  padding-right: 10px;
+  padding-left: 10px;
+
+  margin: 0 auto;
+  /* position: relative; */
+
+  /* * {
+    position: relative;
+  } */
+
+  td,
+  th {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  tr {
+    height: 60px;
+    background: #060b26;
+    color: white;
+
+    padding-right: 10px;
+    padding-left: 10px;
+    border-bottom: 1px solid #e3f1d5;
+    &:last-child {
+      border: 0;
+    }
+
+    /* background: #ffed86; */
+    /* background: #1d9bf0; */
+    /* color: white; */
+    font-size: 16px;
+  }
+
+  thead tr {
+    height: 60px;
+    /* background: #ffed86; */
+    background: black;
+    /* color: white; */
+    font-size: 20px;
+  }
+  .table2 {
+    height: 60px;
+    /* background: #ffed86; */
+    background: black;
+    /* color: white; */
+    font-size: 17px;
+  }
+
+  tbody tr {
+    height: 48px;
+    font-size: 13px;
+    border-bottom: 1px solid #e3f1d5;
+    &:last-child {
+      border: 0;
+    }
+  }
+
+  td,
+  th {
+    text-align: left;
+    &.l {
+      text-align: right;
+    }
+    &.c {
+      text-align: center;
+    }
+    &.r {
+      text-align: center;
+    }
+  }
+}
+  </style>
+</head>
+<body>
+  <div class="main all-website-font">
+    <table id="my-table">
+      <tr class="table2">
+        <th>Current Date</th>
+        <th>Description</th>
+        <th>Fasting</th>
+        <th>ABF</th>
+        <th>BL</th>
+        <th>AL</th>
+        <th>BD</th>
+        <th>AD</th>
+        <th>3AM</th>
+      </tr>
+
+      <% uniqueNames.forEach(function(varrr) { %>
+        <tr>
+          <td><%= varrr.CURRENT_DATE %></td>
+          <td><b>BG</b></td>
+          <td><%= varrr.Fasting %></td>
+          <td><%= varrr.abf %></td>
+          <td><%= varrr.bl %></td>
+          <td><%= varrr.al %></td>
+          <td><%= varrr.bd %></td>
+          <td><%= varrr.ad %></td>
+          <td><%= varrr.threeam %></td>
+        </tr>
+        <tr>
+          <td><%= varrr.CURRENT_DATE %></td>
+          <td><b>Insulin</b></td>
+          <td><%= varrr.Fastingin %></td>
+          <td><%= varrr.abfin %></td>
+          <td><%= varrr.blin %></td>
+          <td><%= varrr.alin %></td>
+          <td><%= varrr.bdin %></td>
+          <td><%= varrr.adin %></td>
+          <td><%= varrr.threeamin %></td>
+        </tr>
+        <br>
+      <% }); %>
+    </table>
+  </div>
+</body>
+</html>
