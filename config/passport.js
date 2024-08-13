@@ -10,7 +10,7 @@ passport.use(
       // callbackURL: `http://localhost:8080/auth/web/google/callback`,
       // callbackURL: `https://t1-expert-be.onrender.com/auth/web/google/callback`,
 
-      callbackURL: `https://t1-life-backend-instance-a0f4h8a2gvh8g2gt.eastus-01.azurewebsites.net`,
+      callbackURL: `https://t1-life-backend-instance-a0f4h8a2gvh8g2gt.eastus-01.azurewebsites.net/auth/web/google/callback`,
       scope: ["email", "profile"],
     },
     function (accessToken, refreshToken, profile, callback) {
